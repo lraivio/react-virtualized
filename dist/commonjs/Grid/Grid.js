@@ -193,10 +193,10 @@ var Grid = function (_Component) {
 
       if (scrollPositionChangeReason === SCROLL_POSITION_CHANGE_REASONS.REQUESTED) {
         if (scrollLeft >= 0 && scrollLeft !== prevState.scrollLeft && scrollLeft !== this.refs.scrollingContainer.scrollLeft) {
-          this.refs.scrollingContainer.scrollLeft = scrollLeft;
+          this.refs.scrollingContainer.scrollLeft++;
         }
         if (scrollTop >= 0 && scrollTop !== prevState.scrollTop && scrollTop !== this.refs.scrollingContainer.scrollTop) {
-          this.refs.scrollingContainer.scrollTop = scrollTop;
+          this.refs.scrollingContainer.scrollTop++;
         }
       }
 
